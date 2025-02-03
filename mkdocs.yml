@@ -114,8 +114,8 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-#plugins:
-#  - glightbox
+plugins:
+  - glightbox
 
 
 #extra:
