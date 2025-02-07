@@ -20,14 +20,14 @@ theme:
       primary: black
       accent: indigo
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
       accent: indigo
       toggle:
-        icon: material/toggle-switch-off
+        icon: material/weather-sunny
         name: Switch to system preference
 
   features:
@@ -114,13 +114,13 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-plugins:
-  - search
-  - exclude-search:
-      exclude:
-        - 01-case.md
-        - 02-case.md
-        - 03-case.md
+#plugins:
+#  - search
+#  - exclude-search:
+#      exclude:
+#        - 01-case.md
+#        - 02-case.md
+#        - 03-case.md
 
 
 
