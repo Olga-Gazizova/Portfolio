@@ -10,8 +10,6 @@ title: "Title"
 metaTitle: "Title"
 sort: "1"
 
-search:
-  exclude: true
 
 ---
 
