@@ -114,8 +114,14 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-#plugins:
-#   - glightbox
+plugins:
+  - search
+  - exclude-search:
+      exclude:
+        - 01-case.md
+        - 02-case.md
+        - 03-case.md
+
 
 
 

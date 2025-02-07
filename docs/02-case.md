@@ -3,15 +3,15 @@ date:
   created: 2025-02-03
   updated: 2025-02-03
 
-#search:
-  #exclude: true
+search:
+  exclude: true
 
 slug: "/post2"
 title: "Интерфейс приложения по обзвону должников"
 metaTitle: "Интерфейс приложения по обзвону должников"
 sort: "2"
 
-glightbox.auto_caption: true
+
 
 ---
 
