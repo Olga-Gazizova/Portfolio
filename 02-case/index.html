@@ -1,0 +1,1014 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Olga Gazizova">
+      
+      
+        <link rel="canonical" href="https://github.com/Olga-Gazizova/Portfolio.git/02-case/">
+      
+      
+        <link rel="prev" href="../01-case/">
+      
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>Интерфейс приложения по обзвону должников - Portfolio Olga Gazizova</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Portfolio Olga Gazizova" class="md-header__button md-logo" aria-label="Portfolio Olga Gazizova" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Portfolio Olga Gazizova
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Интерфейс приложения по обзвону должников
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Обо мне
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01-case/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Портфолио
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Portfolio Olga Gazizova" class="md-nav__button md-logo" aria-label="Portfolio Olga Gazizova" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Portfolio Olga Gazizova
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Обо мне
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Портфолио
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Портфолио
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Интерфейс для системы контроля доступа и видеонаблюдения
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Интерфейс приложения по обзвону должников
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Интерфейс приложения по обзвону должников
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Год
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Что сделано
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Контекст
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Формат
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Команда
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Предварительный анализ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Предварительный анализ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Карта функций и аудит интерфейса
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Карта пути пользователя
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Выводы
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проектирование навигации
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проработка форм с настройками
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Проработка форм с настройками">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Настройки обзвона
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Настройки подключений
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проработка таблиц
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Мастер настройки
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Итог
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Год
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Что сделано
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Контекст
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Формат
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Команда
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Предварительный анализ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Предварительный анализ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Карта функций и аудит интерфейса
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Карта пути пользователя
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Выводы
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проектирование навигации
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проработка форм с настройками
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Проработка форм с настройками">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Настройки обзвона
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Настройки подключений
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проработка таблиц
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Мастер настройки
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Итог
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Интерфейс приложения по обзвону должников</h1>
+
+<h2 id="_1">Год<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>2022</p>
+<h2 id="_2">Что сделано<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Обновлен интерфейс приложения «Обзвон должников».</p>
+<h2 id="_3">Контекст<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Я работала продуктовым дизайнером в компании, которая создавала и внедряла собственные цифровые решения.</p>
+<p>Одним из продуктов компании было приложение «Обзвон должников», предназначенное для информирования клиентов о накопившейся задолженности.</p>
+<p>Приложение было частью облачной платформы по обработке голосовой информации. Помимо “Обзвона должников”, платформа включала в себя приложения “Прием показаний счетчиков” и “Идентификация по телефону”. Первоначально интерфейс приложения был разработан на скорую руку, но когда продукт получил первых пользователей, возникла необходимость в его доработке.</p>
+<p>На первом этапе передо мной стояла задача улучшить UI приложения и, по возможности, UX приложения “Обзвон должников”.</p>
+<h2 id="_4">Формат<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>Веб-сервис без адаптации для мобильных устройств</p>
+<h2 id="_5">Команда<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Дизайнер - это я 🙋,</li>
+<li>Продакт-менеджер,</li>
+<li>Продукт-оунер (ЛПР).</li>
+</ul>
+<h2 id="_6">Предварительный анализ<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>На предварительных обсуждениях продакт-менеджер погрузил меня в продукт. Мне предоставили доступ к тестовой платформе, ссылку на портал с документацией и UI-kit, включающий палитру и стили шрифтов.</p>
+<h3 id="_7">Карта функций и аудит интерфейса<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>Я начала с изучения возможностей платформы. Ознакомилась с документацией и составила карту функций.</p>
+<p><a class="glightbox" href="../images/02-case-function-map.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Карта функций" src="../images/02-case-function-map.png" title="Карта функций" /></a></p>
+<p><a href="https://www.figma.com/board/XZyRXmhivU624MY72DALI2/02-case-%D0%BA%D0%B0%D1%80%D1%82%D0%B0-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9?node-id=0-1&amp;t=nnH3nSd13S0R7V7H-1">Ссылка на карту функций</a></p>
+<p>Далее я разбила функциональность всех приложений на блоки, которые присутствуют в каждом из них:</p>
+<ul>
+<li>Списки должников, счетчиков, систем;</li>
+<li>Журнал звонков;</li>
+<li>Управление балансом;</li>
+<li>Профиль пользователя;</li>
+<li>Настройки автообзвона;</li>
+<li>Настройки подключений.</li>
+</ul>
+<h3 id="_8">Карта пути пользователя<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>Затем я перешла к изучению пользовательского опыта. К сожалению, у меня не было возможности привлечь респондентов для проведения полноценных исследований. Поэтому я решила исследовать его самостоятельно, пройдя через основные шаги главного кейса использования.</p>
+<ol>
+<li>
+<p><strong>Первый вход</strong>.</p>
+<p>После прохождения первой авторизации открылся пустой раздел с лицевыми счетами и требованием пополнить баланс.</p>
+<p>❌ Непонятно с чего начать работу. С пополнения баланса? Или загрузки лицевых счетов? Какие настройки доступны?</p>
+<p><a class="glightbox" href="../images/02-case-old-interface-01.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Старый интерфейс" src="../images/02-case-old-interface-01.png" title="Старый интерфейс" /></a></p>
+</li>
+<li>
+<p><strong>Загрузка должников</strong>.</p>
+<p>Чтобы загрузить лицевые счета должников, я нажала на кнопку «Импорт(.xlsx)» и указала путь к файлу. Я загружала должников из тестового файла.</p>
+<p>👍 Файл моментально загрузился. В разделе «Лицевые счета» отобразилась таблица со счетами должников.</p>
+<p>❌ Неочевидно куда нажать, чтобы загрузить счета и непонятно, где ознакомиться с информацией о структуре файла.</p>
+<p>❌ Таблица со счетами неинформативная. Отсутствует сортировка и глобальный поиск. Неудобная фильтрация.  </p>
+<p>❌ Сумма и месяц задолженности объединены в один столбец.</p>
+<p>❌ Нет возможности создать нового должника вручную.  </p>
+<p><a class="glightbox" href="../images/02-case-old-interface-02.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Старый интерфейс" src="../images/02-case-old-interface-02.png" title="Старый интерфейс" /></a></p>
+</li>
+<li>
+<p><strong>Настройки</strong></p>
+<p>Интерфейс с настройками оформлен в виде модального окна и вызывается по кнопке из шапки таблицы. Настройки разбиты на категории, сгруппированные в аккордеоны.</p>
+<ul>
+<li>
+<p><strong>Настройка сценария</strong></p>
+<p>Я настроила текст, который будет озвучивать робот во время звонка, а также определила критерии отбора должников.</p>
+<p>👍 Я смогла прослушать предварительный результат звонка и смогла проверить какое количество должников попадет в обзвон в соответствии с указанными критериями.</p>
+<p>❌ Как работает настройка «Месяца задолженности»? Следует ли понимать её как «более» или «менее»? По умолчанию в поле «Месяца задолженности» отображается какое-то странное значение.</p>
+<p>❌Как настроить обзвон по всем просроченным платежам?</p>
+<p>❌Как исключить из обзвона должников, которым уже ранее звонили?</p>
+<p><a class="glightbox" href="../images/02-case-old-interface-04.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Старый интерфейс" src="../images/02-case-old-interface-04.png" title="Старый интерфейс" /></a></p>
+</li>
+<li>
+<p><strong>Настройка обзвона</strong>.</p>
+<p>👍 Я смогла установить дату и время, когда начнется и завершится обзвон. Также у меня была возможность выбрать другой голос, с которым робот будет зачитывать текст во время звонка.</p>
+<p>❌ Если изменить голос, то придется возвращаться к настройкам сценария, чтобы заново прослушать предварительный звонок.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Активация обзвона</strong>.</p>
+<p>Чтобы запустить обзвон, я нажала на кнопку «Активировать» в модальном окне с настройками.</p>
+<p>После активации обзвона оставалось ощущение незавершенности.  </p>
+<p>❌Как понять, что обзвон активирован?</p>
+<p>❌Можно ли изменить настройки, когда запрос активирован?</p>
+<p>❌Как деактивировать запущенный обзвон?</p>
+<p>❌Как узнать результаты обзвона?</p>
+<p><a class="glightbox" href="../images/02-case-old-interface-03.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Старый интерфейс" src="../images/02-case-old-interface-03.png" title="Старый интерфейс" /></a></p>
+</li>
+</ol>
+<h2 id="_9">Выводы<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>На обсуждениях с ЛПР мы проговорили результаты анализа.</p>
+<p>Кроме того, я предложила рассмотреть новую функциональность с виртуальной сущностью "Задание". Благодаря этой функции, пользователь сможет загружать счета, настраивать параметры обзвона и отбора для конкретных заданий, активировать и деактивировать эти задания, а также отслеживать статус обзвона для каждого из них.</p>
+<p>В конечном итоге было решено не вносить изменения в существующую функциональность. Мы решили сосредоточиться на первоначальном плане, который включал улучшение UX/UI приложения.</p>
+<h2 id="_10">Проектирование навигации<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p>Навигация приложения должна состоять из нескольких уровней:</p>
+<ul>
+<li>
+<p><strong>Первый уровень</strong> - активное приложение.</p>
+<ul>
+<li>Возможность вызвать глобальное меню приложений,</li>
+<li>Название активного приложения -  «Обзвон должников ЖКХ», «Прием показаний счетчиков» или «Идентификация по телефону»,</li>
+<li>Учетная запись, с который выполнен вход.</li>
+</ul>
+<p>Стоит отметить, что для аутентификации пользователей на платформе был подключен сторонний сервис авторизации. После авторизации на платформе пользователь получал доступ ко всем ее приложениям.</p>
+</li>
+<li>
+<p><strong>Второй уровень</strong> - разделы приложения.</p>
+<ul>
+<li>Список лицевых счетов должников,</li>
+<li>Журнал звонков,</li>
+<li>Настройки обзвона и подключений.</li>
+</ul>
+<p>Кроме того, нужно учесть интерфейс для управления балансом и учетной записью.</p>
+</li>
+</ul>
+<p>В конечном итоге я предложила два варианта:</p>
+<ol>
+<li>
+<p><strong>Первый вариант</strong>: Оставить существующую версию навигации.</p>
+<p><a class="glightbox" href="../images/02-case-navigation1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Карта функций" src="../images/02-case-navigation1.png" title="Карта функций" /></a></p>
+</li>
+<li>
+<p><strong>Второй вариант</strong>: вынести второй уровень навигации в боковое меню.</p>
+<p><a class="glightbox" href="../images/02-case-navigation2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Карта функций" src="../images/02-case-navigation2.png" title="Карта функций" /></a></p>
+</li>
+</ol>
+<p>В результате победил первый вариант, поскольку он использовался с самого начала и был привычен для имеющихся пользователей.</p>
+<h2 id="_11">Проработка форм с настройками<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<p>Я разбила настройки приложения на два блока:</p>
+<ul>
+<li>Настройки обзвона,</li>
+<li>Настройки различных подключений.</li>
+</ul>
+<p>Для всех форм использовала компоненты, существующие в библиотеке Material-UI.</p>
+<h3 id="_12">Настройки обзвона<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>Я решила разместить форму с настройками обзвона на новой странице. Основная причина — в этой форме много сложных настроек, и нет необходимости оставлять пользователя в контексте текущей страницы.</p>
+<p>Я учла недочеты, выявленные при построении пути пользователя.</p>
+<p>👍 Все настройки я рассортировала и разместила в виде блоков без сворачивания в аккордеоны. Первым расположила настройки обзвона (когда звонить), вторыми настройки отбора (кому звонить), далее — голосовые настройки (что говорить), последними настройку активации обзвона.</p>
+<p>👍 Улучшила настройку отбора. Теперь пользовать может настроить обзвон по всем должникам из списка или может сумму и срок задолженности с условиями “более”, “менее”, “Более или равно” и “Менее или равно”.</p>
+<p>👍 Принцип отбора стал понятнее. Пользователь может не только указать значение, но и настроить отбор по значению: «больше», «меньше», «больше или равно» и «меньше или равно».</p>
+<p>👍 Активацию обзвона я вынесла в отдельный блок. В этом же блоке теперь отображается статус обзвона.</p>
+<p><a class="glightbox" href="../images/02-case-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Настройки обзвона" src="../images/02-case-settings.png" title="Настройки обзвона" /></a></p>
+<h3 id="_13">Настройки подключений<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>Подключения к SIP-аккаунту и к внешним системам я разместила на одной вкладке “Подключения”.</p>
+<p>Вызов формы с созданием подключения сохранила в виде модального окна.</p>
+<p>Для каждого подключения добавила меню с действиями.</p>
+<p><a class="glightbox" href="../images/02-case-win-04.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Настройки подключений" src="../images/02-case-win-04.png" title="Настройки подключений" /></a></p>
+<h3 id="_14">Проработка таблиц<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>Таблицы отображаются в 2х разделах «Лицевые счета» и «Журнал».</p>
+<p>👍 Добавила в таблицу «пустое» состояние.</p>
+<p><a class="glightbox" href="../images/02-case-win-03.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Пустое состояние в таблице" src="../images/02-case-win-03.png" title="Пустое состояние в таблице" /></a></p>
+<p>👍 Доработала сортировку.</p>
+<p>👍 Убрала поиск из столбцов шапки таблицы. Вынесла его в отдельный компонент.</p>
+<p>👍 Кнопки действий с элементами списка разместила на привычном месте над таблицей.</p>
+<p>👍 Все количественные данные в таблицах выровняла по правому краю столбца.</p>
+<p>👍Сумма и месяц задолженности в таблице с лицевыми счетами разнесла по разным столбцам.</p>
+<p>Таблицы для раздела «Лицевые счета»:</p>
+<p><a class="glightbox" href="../images/02-case-win-01.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Списки счетов" src="../images/02-case-win-01.png" title="Списки счетов" /></a></p>
+<p><a class="glightbox" href="../images/02-case-win-02.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Списки счетов" src="../images/02-case-win-02.png" title="Списки счетов" /></a></p>
+<p>Таблицы для раздела «Журнал»:</p>
+<p><a class="glightbox" href="../images/02-case-win-05.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Списки счетов" src="../images/02-case-win-05.png" title="Списки счетов" /></a></p>
+<p><a class="glightbox" href="../images/02-case-win-06.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Списки счетов" src="../images/02-case-win-06.png" title="Списки счетов" /></a></p>
+<h3 id="_15">Мастер настройки<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>Для новых пользователей я добавила пошаговый мастер настройки. В этом мастере я использовала компоненты, которые уже были в основных интерфейсах.</p>
+<p><a class="glightbox" href="../images/02-case-master-01.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Мастер настройки" src="../images/02-case-master-01.png" title="Мастер настройки" /></a></p>
+<p><a class="glightbox" href="../images/02-case-master-02.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Мастер настройки" src="../images/02-case-master-02.png" title="Мастер настройки" /></a></p>
+<p><a class="glightbox" href="../images/02-case-master-03.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Мастер настройки" src="../images/02-case-master-03.png" title="Мастер настройки" /></a></p>
+<p><a class="glightbox" href="../images/02-case-master-04.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Мастер настройки" src="../images/02-case-master-04.png" title="Мастер настройки" /></a></p>
+<p><a class="glightbox" href="../images/02-case-master-05.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Мастер настройки" src="../images/02-case-master-05.png" title="Мастер настройки" /></a></p>
+<h2 id="_16">Итог<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<p>В результате была внедрена лишь часть запланированных изменений, поскольку в настоящее время продукт продолжает развиваться и наращивает клиентскую базу.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Olga Gazizova
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "header.autohide", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
