@@ -1,0 +1,217 @@
+/*.md-grid {
+  max-width: 80%; 
+}
+
+/* Карточки в кейсах */
+/* ===== Светлая тема ===== */
+.card-image {
+  border-radius: 16px;
+  border: 1px solid #E5E5E5;
+  display: block;
+}
+
+/* ===== Тёмная тема ===== */
+[data-md-color-scheme="slate"] .card-image {
+  border-radius: 16px;          /* скругление сохраняем */
+  border: 1px solid #14151A;    /* обводка адаптирована для тёмной темы */
+}
+
+
+
+
+/* Заголовки */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: "Montserrat", "Poppins", sans-serif;
+}
+
+/* Скрываем заголовок сайта */
+.md-header__title,
+.md-header__title a {
+    display: none !important;
+}
+
+/* Логотип слева */
+.md-header__start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+}
+
+/* Кнопка темы и другие элементы справа */
+.md-header__end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem; /* расстояние между кнопками */
+    flex: 1 1 auto;
+}
+
+/* Убираем центрирование всего контейнера */
+.md-header__inner {
+    justify-content: space-between;
+}
+
+
+
+
+/* ===== Блок "Приветствие" ===== */
+.hero-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+/* ===== Hero-блок ===== */
+.hero-text {
+  flex: 1 1 50%;
+}
+
+/* Заголовок */
+.hero-title {
+  display: block;
+  font-size: 3rem;       /* крупный заголовок */
+  font-weight: 600;        /* жирность */
+  line-height: 1.1;        /* высота строки */
+  margin-bottom: 1rem;     
+}
+
+/* Подзаголовок */
+.hero-subtext {
+  font-size: 0,5rem;       /* читаемый размер шрифта */
+  line-height: 1.6;        /* комфортное расстояние между строк */
+  margin-bottom: 1rem;
+}
+
+/* ===== Адаптив ===== */
+@media screen and (max-width: 900px) {
+  .hero-title {
+    font-size: 3rem;        /* уменьшаем на мобильных */
+  }
+  
+  .hero-subtext {
+    font-size: 1rem;
+  }
+}
+
+
+/* Фото справа */
+.hero-photo {
+  flex: 0 0 300px;
+  max-width: 300px;
+}
+
+.hero-photo img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* ===== Адаптив ===== */
+@media screen and (max-width: 900px) {
+  .hero-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-photo {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;    /* уменьшаем заголовок на мобильных */
+  }
+}
+
+.cards-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 3rem 0;
+  flex-wrap: nowrap; /* 3 карточки на одной строке */
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  flex: 1 1 calc(33.333% - 0.66rem);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden; /* чтобы картинка прилипала и повторяла скругление */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  display: block;  /* убирает «пробел» снизу */
+  object-fit: cover;
+}
+
+/* Контент внутри карточки */
+.card-content {
+  padding: 1rem;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #4051B5;
+  font-weight: 500;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== Адаптив ===== */
+@media screen and (max-width: 900px) {
+  .cards-block {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+
+/* ===== Тёмная тема для карточек ===== */
+[data-md-color-scheme="slate"] .card {
+  background: #14151A;           /* фон карточки */
+  color: #eee;                   /* основной текст */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+[data-md-color-scheme="slate"] .card p,
+[data-md-color-scheme="slate"] .card-content {
+  color: #ccc;                   /* описание светлее */
+}
+
+
+[data-md-color-scheme="slate"] .card-link {
+  color: #526CFE;                /* ссылка с акцентом */
+}

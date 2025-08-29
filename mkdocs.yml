@@ -10,18 +10,22 @@ copyright: Copyright &copy; 2025 Olga Gazizova
 theme:
   logo: assets/logo.png
   name: material
+  language: ru
   palette:
+    # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/link
         name: Switch to light mode
+    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
+      primary: white
       accent: indigo
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
+    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
@@ -42,7 +46,7 @@ theme:
     - content.tooltips
     - header.autohide
     # - navigation.expand
-    # - navigation.footer
+    - navigation.footer
     - navigation.indexes
     # - navigation.instant
     # - navigation.instant.prefetch
@@ -50,7 +54,7 @@ theme:
     # - navigation.prune
     - navigation.sections
     - navigation.tabs
-    - navigation.tabs.sticky
+    #- navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -78,6 +82,7 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - toc:
+      toc_depth: 2  
       permalink: true
   - pymdownx.arithmatex:
       generic: true
@@ -134,17 +139,14 @@ plugins:
 
 
 
-
-
-#extra:
-  #version:
-    #provider: mike
+extra_css:
+  - stylesheets/extra.css
 
 # Page tree
 nav:
   - Обо мне: index.md
   - Кейсы:
-    - Интерфейс для СКУД: 01-case.md
-    - Интерфейс приложения по обзвону должников: 02-case.md
-    - Интерфейс приложения для подписи: 03-case.md
+    - Система управления доступом: 01-case.md
+    - Приложение по обзвону должников: 02-case.md
+    - Приложения для подписи: 03-case.md
    

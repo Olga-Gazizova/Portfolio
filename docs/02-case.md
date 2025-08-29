@@ -15,6 +15,8 @@ sort: "2"
 
 ---
 
+<img src="../images/index-card-02.png" alt="Card" class="card-image" width="100%">
+
 ## Год
 
 2022

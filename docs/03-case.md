@@ -13,6 +13,8 @@ sort: "3"
 
 ---
 
+<img src="../images/index-card-03.png" alt="Card" class="card-image" width="100%">
+
 ## Год
 
 2023
