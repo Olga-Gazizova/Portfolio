@@ -16,9 +16,6 @@
   border: 1px solid #14151A;    /* обводка адаптирована для тёмной темы */
 }
 
-
-
-
 /* Заголовки */
 .md-typeset h1,
 .md-typeset h2,
@@ -55,16 +52,13 @@
     justify-content: space-between;
 }
 
-
-
-
 /* ===== Блок "Приветствие" ===== */
 .hero-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  margin: 3rem 0;
+  margin: 0 0 1rem 0;
 }
 
 /* ===== Hero-блок ===== */
@@ -75,30 +69,18 @@
 /* Заголовок */
 .hero-title {
   display: block;
-  font-size: 3rem;       /* крупный заголовок */
-  font-weight: 600;        /* жирность */
-  line-height: 1.1;        /* высота строки */
-  margin-bottom: 1rem;     
+  font-size: clamp(1.8rem, 6vw, 3rem); /* ✅ заменили фикс. 3rem на адаптив */
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 1rem;
 }
 
 /* Подзаголовок */
 .hero-subtext {
-  font-size: 0,5rem;       /* читаемый размер шрифта */
-  line-height: 1.6;        /* комфортное расстояние между строк */
+  font-size: clamp(0.9rem, 3vw, 1.2rem); /* ✅ заменили фикс. 0.5rem/1rem */
+  line-height: 1.6;
   margin-bottom: 1rem;
 }
-
-/* ===== Адаптив ===== */
-@media screen and (max-width: 900px) {
-  .hero-title {
-    font-size: 3rem;        /* уменьшаем на мобильных */
-  }
-  
-  .hero-subtext {
-    font-size: 1rem;
-  }
-}
-
 
 /* Фото справа */
 .hero-photo {
@@ -124,17 +106,13 @@
     max-width: 100%;
     margin-top: 1rem;
   }
-
-  .hero-title {
-    font-size: 3rem;    /* уменьшаем заголовок на мобильных */
-  }
 }
 
 .cards-block {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  margin: 3rem 0;
+  margin: 2rem 0;
   flex-wrap: nowrap; /* 3 карточки на одной строке */
 }
 
@@ -198,7 +176,6 @@
   }
 }
 
-
 /* ===== Тёмная тема для карточек ===== */
 [data-md-color-scheme="slate"] .card {
   background: #14151A;           /* фон карточки */
@@ -210,7 +187,6 @@
 [data-md-color-scheme="slate"] .card-content {
   color: #ccc;                   /* описание светлее */
 }
-
 
 [data-md-color-scheme="slate"] .card-link {
   color: #526CFE;                /* ссылка с акцентом */
