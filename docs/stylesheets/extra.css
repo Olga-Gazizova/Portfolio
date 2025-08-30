@@ -204,7 +204,6 @@
   color: #ccc;                   /* описание светлее */
 }
 
-/* ===== Ссылки под приветствием ===== */
 /* ===== Кнопки под приветствием ===== */
 .hero-links {
   margin-top: 1.5rem;
@@ -218,28 +217,41 @@
   justify-content: center;
   padding: 0.5rem 1.2rem;
   border-radius: 9999px;
-  background-color: #E5E5E5;
-  color: #14151A !important; /* ✅ добавили !important */
+  background-color: #E5E5E5;      /* светлая тема фон */
+  color: #14151A !important;      /* светлая тема текст */
   text-decoration: none;
   font-weight: 500;
   gap: 0.5rem;
   transition: 0.2s;
+  white-space: nowrap;             /* чтобы текст не переносился */
 }
 
-[data-md-color-scheme="slate"] .hero-links a {
-  background-color: #1E1E2A; /* фон для темной темы */
-  color: #E5E5E5 !important; /* текст для темной темы */
+/* Hover эффект для светлой темы */
+.hero-links a:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
 }
-
 
 /* ===== Тёмная тема ===== */
 [data-md-color-scheme="slate"] .hero-links a {
-  background-color: #2C2E33;
-  color: #E5E5E5;
+  background-color: #2C2E33;      /* фон для темной темы */
+  color: #E5E5E5 !important;      /* текст для темной темы */
 }
 
 [data-md-color-scheme="slate"] .hero-links a:hover {
-  background-color: #3a3c42;
+  background-color: #3A3C42;      /* hover для темной темы */
 }
 
+/* ===== Адаптив ===== */
+@media screen and (max-width: 600px) {
+  .hero-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;
+  }
 
+  .hero-links a {
+    width: 100%;
+    justify-content: center;
+  }
+}
