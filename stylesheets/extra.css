@@ -1,0 +1,257 @@
+/*.md-grid {
+  max-width: 80%; 
+}
+
+/* Карточки в кейсах */
+/* ===== Светлая тема ===== */
+.card-image {
+  border-radius: 16px;
+  border: 1px solid #E5E5E5;
+  display: block;
+}
+
+/* ===== Тёмная тема ===== */
+[data-md-color-scheme="slate"] .card-image {
+  border-radius: 16px;          /* скругление сохраняем */
+  border: 1px solid #14151A;    /* обводка адаптирована для тёмной темы */
+}
+
+/* Заголовки */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: "Montserrat", "Poppins", sans-serif;
+}
+
+/* Скрываем заголовок сайта */
+.md-header__title,
+.md-header__title a {
+    display: none !important;
+}
+
+/* Логотип слева */
+.md-header__start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+}
+
+/* Кнопка темы и другие элементы справа */
+.md-header__end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem; /* расстояние между кнопками */
+    flex: 1 1 auto;
+}
+
+/* Убираем центрирование всего контейнера */
+.md-header__inner {
+    justify-content: space-between;
+}
+
+/* ===== Блок "Приветствие" ===== */
+.hero-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+/* ===== Hero-блок ===== */
+.hero-text {
+  flex: 1 1 50%;
+}
+
+.hero-title {
+  display: block; /* ✅ критично для margin-bottom */
+  font-family: 'Manrope', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(2.5rem, 6vw, 58px);
+  line-height: clamp(3rem, 7vw, 70px);
+  margin-bottom: 1rem; /* теперь сработает */
+}
+
+
+/* ===== Подзаголовок hero-subtext ===== */
+
+/* Светлая тема */
+.hero-subtext {
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(1rem, 4vw, 22px);
+  line-height: clamp(1.5rem, 5vw, 29px);
+  margin-bottom: 1rem;
+  color: #555; /* цвет только для светлой темы */
+}
+
+/* Тёмная тема */
+[data-md-color-scheme="slate"] .hero-subtext {
+  color: var(--md-typeset-body-color); /* берём цвет из темы mkdocs */
+}
+
+
+
+/* ===== Заголовок "Мои работы" ===== */
+.md-typeset .section-title {
+  font-family: 'Manrope', Arial, sans-serif;
+  font-size: clamp(1.5rem, 6vw, 1rem) !important; /* !important для гарантии */
+  font-weight: 500 !important;
+  margin: 3rem 0 0rem 0 !important;
+}
+
+
+
+/* Фото справа */
+.hero-photo {
+  flex: 0 0 300px;
+  max-width: 300px;
+}
+
+.hero-photo img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* ===== Адаптив ===== */
+@media screen and (max-width: 900px) {
+  .hero-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-photo {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+.cards-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-wrap: nowrap; /* 3 карточки на одной строке */
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  flex: 1 1 calc(33.333% - 0.66rem);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden; /* чтобы картинка прилипала и повторяла скругление */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  display: block;  /* убирает «пробел» снизу */
+  object-fit: cover;
+}
+
+/* Контент внутри карточки */
+.card-content {
+  padding: 1rem;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+
+
+/* ===== Адаптив ===== */
+@media screen and (max-width: 900px) {
+  .cards-block {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+/* ===== Тёмная тема для карточек ===== */
+[data-md-color-scheme="slate"] .card {
+  background: #14151A;           /* фон карточки */
+  color: #eee;                   /* основной текст */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+[data-md-color-scheme="slate"] .card p,
+[data-md-color-scheme="slate"] .card-content {
+  color: #ccc;                   /* описание светлее */
+}
+
+/* ===== Кнопки под приветствием ===== */
+.hero-links {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.2rem;
+  border-radius: 9999px;
+  background-color: #E5E5E5;      /* светлая тема фон */
+  color: #14151A !important;      /* светлая тема текст */
+  text-decoration: none;
+  font-weight: 500;
+  gap: 0.5rem;
+  transition: 0.2s;
+  white-space: nowrap;             /* чтобы текст не переносился */
+}
+
+/* Hover эффект для светлой темы */
+.hero-links a:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* ===== Тёмная тема ===== */
+[data-md-color-scheme="slate"] .hero-links a {
+  background-color: #2C2E33;      /* фон для темной темы */
+  color: #E5E5E5 !important;      /* текст для темной темы */
+}
+
+[data-md-color-scheme="slate"] .hero-links a:hover {
+  background-color: #3A3C42;      /* hover для темной темы */
+}
+
+/* ===== Адаптив ===== */
+@media screen and (max-width: 600px) {
+  .hero-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;
+  }
+
+  .hero-links a {
+    width: 100%;
+    justify-content: center;
+  }
+}
