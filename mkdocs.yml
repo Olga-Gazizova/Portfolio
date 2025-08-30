@@ -4,7 +4,7 @@ site_url: https://github.com/Olga-Gazizova/Portfolio.git
 site_author: Olga Gazizova
 
 # Copyright
-copyright: Copyright &copy; 2025 Olga Gazizova
+# copyright: Copyright &copy; 2025 Olga Gazizova
 
 # Configuration
 theme:
@@ -137,6 +137,10 @@ plugins:
        shadow: true
        manual: false
 
+extra:
+  social:
+    - icon: fontawesome/brands/telegram
+      link: t.me/OlgaGazizova
 
 
 extra_css:

@@ -66,21 +66,45 @@
   flex: 1 1 50%;
 }
 
-/* Заголовок */
 .hero-title {
-  display: block;
-  font-size: clamp(1.8rem, 6vw, 3rem); /* ✅ заменили фикс. 3rem на адаптив */
-  font-weight: 600;
-  line-height: 1.1;
-  margin-bottom: 1rem;
+  display: block; /* ✅ критично для margin-bottom */
+  font-family: 'Manrope', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(2.5rem, 6vw, 58px);
+  line-height: clamp(3rem, 7vw, 70px);
+  margin-bottom: 1rem; /* теперь сработает */
 }
 
-/* Подзаголовок */
+
+/* ===== Подзаголовок hero-subtext ===== */
+
+/* Светлая тема */
 .hero-subtext {
-  font-size: clamp(0.9rem, 3vw, 1.2rem); /* ✅ заменили фикс. 0.5rem/1rem */
-  line-height: 1.6;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(1rem, 4vw, 22px);
+  line-height: clamp(1.5rem, 5vw, 29px);
   margin-bottom: 1rem;
+  color: #555; /* цвет только для светлой темы */
 }
+
+/* Тёмная тема */
+[data-md-color-scheme="slate"] .hero-subtext {
+  color: var(--md-typeset-body-color); /* берём цвет из темы mkdocs */
+}
+
+
+
+/* ===== Заголовок "Мои работы" ===== */
+.md-typeset .section-title {
+  font-family: 'Manrope', Arial, sans-serif;
+  font-size: clamp(1.5rem, 6vw, 1rem) !important; /* !important для гарантии */
+  font-weight: 500 !important;
+  margin: 3rem 0 0rem 0 !important;
+}
+
+
 
 /* Фото справа */
 .hero-photo {
@@ -112,7 +136,7 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
   flex-wrap: nowrap; /* 3 карточки на одной строке */
 }
 
@@ -155,15 +179,7 @@
   margin-bottom: 1rem;
 }
 
-.card-link {
-  text-decoration: none;
-  color: #4051B5;
-  font-weight: 500;
-}
 
-.card-link:hover {
-  text-decoration: underline;
-}
 
 /* ===== Адаптив ===== */
 @media screen and (max-width: 900px) {
@@ -188,6 +204,42 @@
   color: #ccc;                   /* описание светлее */
 }
 
-[data-md-color-scheme="slate"] .card-link {
-  color: #526CFE;                /* ссылка с акцентом */
+/* ===== Ссылки под приветствием ===== */
+/* ===== Кнопки под приветствием ===== */
+.hero-links {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
 }
+
+.hero-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.2rem;
+  border-radius: 9999px;
+  background-color: #E5E5E5;
+  color: #14151A !important; /* ✅ добавили !important */
+  text-decoration: none;
+  font-weight: 500;
+  gap: 0.5rem;
+  transition: 0.2s;
+}
+
+[data-md-color-scheme="slate"] .hero-links a {
+  background-color: #1E1E2A; /* фон для темной темы */
+  color: #E5E5E5 !important; /* текст для темной темы */
+}
+
+
+/* ===== Тёмная тема ===== */
+[data-md-color-scheme="slate"] .hero-links a {
+  background-color: #2C2E33;
+  color: #E5E5E5;
+}
+
+[data-md-color-scheme="slate"] .hero-links a:hover {
+  background-color: #3a3c42;
+}
+
+
