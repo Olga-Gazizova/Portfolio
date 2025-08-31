@@ -176,8 +176,6 @@ sort: "1"
 
     ![Таблицы](./images/01-case-table-state.png "Внешний вид ячеек")
 
-    ![Таблицы](./images/01-case-avatars.png "Аватарки")
-
     ![Таблицы](./images/01-case-table-device.png "Таблица устройств")
 
     ![Таблицы](./images/01-case-table-user.png "Таблица пользователей")
