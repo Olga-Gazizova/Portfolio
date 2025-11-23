@@ -146,8 +146,8 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
-#extra_javascript:
-#  - assets/js/yandex-metrika.js
+extra_javascript:
+  - assets/js/yandex-metrika.js
 
 
 # Page tree
@@ -156,5 +156,5 @@ nav:
   - Кейсы:
     - Система управления доступом: 01-case.md
     - Приложение по обзвону должников: 02-case.md
-    - Приложения для подписи: 03-case.md
+    - Приложение для подписи PDF-файлов: 03-case.md
    
