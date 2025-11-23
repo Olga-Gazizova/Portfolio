@@ -1,0 +1,983 @@
+<!DOCTYPE html><html lang="ru" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Olga Gazizova">
+      
+      
+        <link rel="canonical" href="https://github.com/Olga-Gazizova/Portfolio.git/01-case/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../02-case/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Система управления доступом - Portfolio Olga Gazizova</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="Portfolio Olga Gazizova" class="md-header__button md-logo" aria-label="Portfolio Olga Gazizova" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Portfolio Olga Gazizova
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Система управления доступом
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo" aria-label="Switch to system preference" type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Обо мне
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Кейсы
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Portfolio Olga Gazizova" class="md-nav__button md-logo" aria-label="Portfolio Olga Gazizova" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Portfolio Olga Gazizova
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Обо мне
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Кейсы
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Кейсы
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Система управления доступом
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Система управления доступом
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        О проекте
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Подготовка
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Концептуальный макет
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проработка внешнего вида
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сдача проекта
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Результат
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Приложение по обзвону должников
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Приложение для подписи PDF-файлов
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        О проекте
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Подготовка
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Концептуальный макет
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проработка внешнего вида
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сдача проекта
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Результат
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Система управления доступом</h1>
+
+<h2 id="_1">О проекте<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/index-card-01.png" data-desc-position="bottom"><img src="../images/index-card-01.png" alt="Card" class="card-image" width="100%"></a></p>
+<p>Компания, в которой я работала дизайнером, занималась разработкой собственных цифровых решений. Один из её продуктов — система видеонаблюдения.</p>
+<p>В компанию обратился клиент с задачей автоматизировать пропускной режим на своем предприятии.</p>
+<p>Основные цели:</p>
+<ul>
+<li>бесконтактный проход сотрудников через турникеты, бесконтактное измерение температуры,</li>
+<li>контроль рабочего времени и организация временных пропусков,</li>
+<li>интеграция с системой Sigur,</li>
+<li>аутентификация через Active Directory,</li>
+<li>формирование отчетности.  </li>
+</ul>
+<p>Старый интерфейс не подходил под эти задачи и было принято решение полностью его переработать.  </p>
+<h3 id="_2">Формат продукта<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>Веб-сервис (без мобильной версии).</p>
+<h3 id="_3">Команда<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<ul>
+<li>Дизайнер - я 🙋</li>
+<li>Проджект-менеджер</li>
+<li>Аналитик</li>
+<li>Тимлид разработки</li>
+<li>ЛПР со стороны клиента</li>
+</ul>
+<h3 id="_4">Моя роль<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<ul>
+<li>Исследовала продукт и конкурентов, выделила ключевые сценарии,</li>
+<li>Подготовила UI-kit и разработала прототипы основных сценариев,</li>
+<li>С нуля спроектировала новый интерфейс,</li>
+<li>Курировала реализацию макетов.</li>
+</ul>
+<h3 id="_5">Сложности, с которыми я столкнулась<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<ol>
+<li>
+<p><strong>Сжатые сроки и отсутствие исследований</strong></p>
+<p>У нас не было времени на полноценные пользовательские интервью и тестирование. Мы опирались на аналитику конкурентов и собственный опыт. Это не заменило исследования, но позволило быстро собрать рабочую концепцию.</p>
+</li>
+<li>
+<p><strong>Ограниченные ресурсы для дизайн-системы</strong></p>
+<p>Изначально я хотела предложить внедрить одну из существующих дизайн-систем, но быстро стало ясно, что для проекта с небольшим бюджетом и жёсткими сроками это неоправданно. Вместо этого я собрала локальный UI-kit с базовыми компонентами.</p>
+</li>
+<li>
+<p><strong>Противоречивые ожидания стейкхолдеров</strong></p>
+<p>ЛПР часто ссылался на конкурентов и хотел «сделать как у них». Это экономило время, но не всегда подходило под наши процессы. Мне пришлось аргументировать: где заимствование действительно оправдано, а где лучше адаптировать или предложить своё решение.</p>
+</li>
+<li>
+<p><strong>Навигация и вложенные группы</strong></p>
+<p>Структура с локальными и внешними группами, плюс возможность вложенности, угрожала перегрузить интерфейс. Я предложила несколько сценариев навигации. Вместе с командой мы обсудили варианты и выбрали комбинацию, которая сохранила масштабируемость и не запутывала пользователя.</p>
+</li>
+<li>
+<p><strong>Отсутствие мобильной версии</strong></p>
+<p>Хотя мобильная адаптация в проекте не предусматривалась, нужно было учитывать, что интерфейсом будут пользоваться на разных экранах, включая небольшие экраны ноутбуков. Я отказалась от фиксированной ширины ячеек в таблицах и настроила их равномерное распределение. Это позволило сохранить читаемость данных даже при ограниченной ширине экрана.</p>
+</li>
+</ol>
+<h2 id="_6">Подготовка<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<ol>
+<li>
+<p>Я начала с изучения существующей версии продукта. Установила продукт и попробовала самостоятельно выполнить базовые сценарии.</p>
+<p>Вот так выглядел интерфейс приложения, которое требовалось доработать:</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-old-version.png" data-desc-position="bottom"><img alt="Старый интерфейс" src="../images/01-case-old-version.png" title="Старый интерфейс"></a></p>
+</li>
+<li>
+<p>Составила карту функций и выделила сценарии по ролям.</p>
+<ul>
+<li><a href="https://www.figma.com/board/tiIJ3Hv3RNT8f5jrfHiKxY/">🔗 Карта функций в Figma</a>  </li>
+<li><a href="https://docs.google.com/spreadsheets/d/13eY5h-dG_va8fw0-JYh8TS8mpH_UEvt4yg3OH-H-CdU/">📊 Реестр сценариев</a></li>
+</ul>
+</li>
+<li>
+<p>Изучила конкурентов (частично через пробные версии, частично — по документации).</p>
+</li>
+</ol>
+<blockquote>
+<p>📌 Аналитикой пользователей на этом проекте я не занималась. Проджект-менеджер достаточно хорошо исследовал своих клиентов, я опиралась на его данные.</p>
+</blockquote>
+<h2 id="_7">Концептуальный макет<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
+<h3 id="_8">Навигация<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<p>Я предложила построить навигацию из <strong>двух уровней</strong>, чтобы система оставалась масштабируемой и удобной при росте количества устройств и пользователей.</p>
+<ol>
+<li>
+<p><strong>Первый уровень</strong> — выбор раздела.</p>
+<p>Основные разделы: <strong>Устройства</strong>, <strong>Пользователи</strong>, <strong>Администрирование</strong> и <strong>Мониторинг</strong>.</p>
+<p>Так как «Устройства» и «Пользователи» могут объединяться в группы, включая вложенные, необходимо было продумать удобный второй уровень навигации для работы с ними.</p>
+<p>На обсуждениях ЛПР ссылался на конкурентов, где навигация первого уровня размещена в верхней панели. Я учла этот опыт и подготовила два варианта:</p>
+<ul>
+<li>с верхней панелью,</li>
+<li>с боковой панелью слева.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-navigation.png" data-desc-position="bottom"><img alt="Концептуальный макет" src="../images/01-case-navigation.png" title="Концептуальный макет"></a></p>
+<p>В конечном итоге ЛПР выбрал вариант <strong>с верхней панелью</strong>.</p>
+</li>
+<li>
+<p><strong>Второй уровень</strong> - выбор группы.</p>
+<p>В системе должны отображаться как локальные группы, созданные пользователями, так и внешние группы, загруженные из сторонних систем.</p>
+<p>Поскольку у нас не было возможности проводить исследования, мы с проджект-менеджером решили заимствовать опыт конкурентов. Навигацию второго уровня мы разместили в левой панели. Вместо сложных фильтров для локальных и внешних групп мы сделали <strong>два отдельных иерархических дерева</strong>.</p>
+<p>Чтобы пользователь не терял контекст при работе с вложенными группами, я добавила <strong>хлебные крошки</strong> перед табличной частью.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-navigation2.png" data-desc-position="bottom"><img alt="Концептуальный макет" src="../images/01-case-navigation2.png" title="Концептуальный макет"></a></p>
+</li>
+</ol>
+<h3 id="_9">Таблицы<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
+<p>Устройства и пользователи, сохраненные в группах, должны быть выведены в интерфейс в виде таблиц.</p>
+<p>На этапе концептуального макета я не углублялась в проработку представления данных. Эта работа перенесена на следующий этап.</p>
+<p>На этапе концептуального макета я сосредоточилась не на визуале, а на определении ключевых требований. Все решения согласовывала с проджект-менеджером и разработкой.</p>
+<ol>
+<li><strong>Размещение</strong>. На экране отображается одна таблица, занимающая всю ширину — это упрощает восприятие данных и даёт максимум пространства для работы.</li>
+<li>
+<p><strong>Фильтрация</strong>. Я рассматривала 3 варианта размещения фильтрации:</p>
+<ul>
+<li>фильтры в шапке таблицы (как в Excel),</li>
+<li>скрытая панель по кнопке (по аналогии компонентом <a href="https://mui.com/material-ui/react-table/">“Table”</a> из библиотеки Material UI v6),  </li>
+<li>отдельная панель над таблицей.</li>
+</ul>
+<p>Остановились на третьем варианте: он оказался самым наглядным и не перегружал интерфейс.</p>
+</li>
+<li>
+<p><strong>Пагинация или бесконечная прокрутка?</strong> К решению этого вопросам был привлечен тимлид команды разработки. Мы остановились на “бесконечной прокрутке”.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-navigation3.png" data-desc-position="bottom"><img alt="Концептуальный макет" src="../images/01-case-navigation3.png" title="Концептуальный макет"></a></p>
+</li>
+</ol>
+<h3 id="_10">Форма просмотра и создания<a class="headerlink" href="#_10" title="Permanent link">¶</a></h3>
+<ol>
+<li>Для <strong>просмотра профиля устройства или пользователя</strong> я рассматривала два варианта: модальное окно и отдельную страницу. Поскольку профили содержат сложные сценарии взаимодействия, включая вызов вложенных интерфейсов, я выбрала отдельную страницу.</li>
+<li><strong>Формы создания объектов</strong> я разбила на логические блоки и собрала их в виде пошагового мастера. Такой подход позволил сделать процесс добавления устройств, пользователей и групп последовательным. Как и в случае просмотра, мастер открывается на отдельной странице.</li>
+</ol>
+<h2 id="_11">Проработка внешнего вида<a class="headerlink" href="#_11" title="Permanent link">¶</a></h2>
+<h3 id="ui-kit">UI-kit<a class="headerlink" href="#ui-kit" title="Permanent link">¶</a></h3>
+<p>Для проекта я подготовила локальный UI-kit для светлой темы.</p>
+<p>Из-за небольшого масштаба проекта и сжатых сроков мы не могли тратить время на создание полноценной дизайн-системы. Я собрала ключевые компоненты интерфейса — кнопки, поля ввода, таблицы, модальные окна, вкладки и иконки — с использованием существующего стиля старой версии продукта. Это позволило сохранить узнаваемость продукта для пользователей и предоставить команде разработчиков готовые элементы для быстрой сборки экранов.</p>
+<h3 id="_12">Представление данных в таблицах<a class="headerlink" href="#_12" title="Permanent link">¶</a></h3>
+<p>На этом этапе я прорабатывала представление данных в таблицах и действия с ними.</p>
+<ol>
+<li>
+<p><strong>Систематизация данных</strong>.</p>
+<p>Я структурировала данные объектов и действия пользователя. Далее вместе с проджект-менеджером обсудила оптимальную структуру таблиц.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-table-structure.png" data-desc-position="bottom"><img alt="Таблицы" src="../images/01-case-table-structure.png" title="Систематизация данных в таблицах"></a></p>
+</li>
+<li>
+<p><strong>Адаптивность</strong>.</p>
+<p>Мы отказались от фиксированной ширины ячеек. Ячейки должны равномерно распределяться на экране. Текст в них должен отображаться без обрезания (если возможно) и переноса.</p>
+</li>
+<li>
+<p><strong>Ячейки и строки</strong>.</p>
+<ul>
+<li>На этом шаге я прорабатывала компоненты для ячеек и строк.  </li>
+<li>Проверяла гипотезу с “зеброй”. В некоторых гайдах по проектированию таблиц рекомендуют использовать чередующуюся заливку строк в виде “зебры”, чтобы сделать информацию лучше читаемой. Мы проговорили эту гипотезу с проджектом и в конечном итоге отбросили. В нашем случае “зебра” скорее отвлекала от чтения таблицы.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-table-state.png" data-desc-position="bottom"><img alt="Таблицы" src="../images/01-case-table-state.png" title="Внешний вид ячеек"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-table-device.png" data-desc-position="bottom"><img alt="Таблицы" src="../images/01-case-table-device.png" title="Таблица устройств"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-table-user.png" data-desc-position="bottom"><img alt="Таблицы" src="../images/01-case-table-user.png" title="Таблица пользователей"></a></p>
+</li>
+<li>
+<p><strong>Столбцы</strong>.</p>
+<p>Было решено отказаться от регулятора ширины столбцов. Для упрощения просмотра мы добавили настройку отображения столбцов.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-table.png" data-desc-position="bottom"><img alt="Таблицы" src="../images/01-case-table.png" title="Настройка отражения столбцов"></a></p>
+</li>
+<li>
+<p><strong>Действия с элементами списка</strong>.</p>
+<ul>
+<li>
+<p>Одиночные действия вынесли в виде привычного меню “Три точки”.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-table-device-actions-more.png" data-desc-position="bottom"><img alt="Таблицы" src="../images/01-case-table-device-actions-more.png" title="Одиночные действия"></a></p>
+</li>
+<li>
+<p>Групповые действия. Я выяснила, что пользователи редко обращаются к сценариям с групповыми действиями. Кроме того, групповые действия доступны не всем ролям в системе. Поэтому я предложила вызывать кнопки действий при проставлении отметки чекбоксом.  А для ролей, для которых эти действия недоступны, чекбоксы скрыть из интерфейса.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-table-device-actions.png" data-desc-position="bottom"><img alt="Таблицы" src="../images/01-case-table-device-actions.png" title="Групповые действия"></a></p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="_13">Проработка форм<a class="headerlink" href="#_13" title="Permanent link">¶</a></h3>
+<ol>
+<li>
+<p><strong>Добавление устройства:</strong> подключение → настройки устройства → настройки доступа</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-add-device.png" data-desc-position="bottom"><img alt="Формы" src="../images/01-case-add-device.png" title="Добавление устройства"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-add-device2.png" data-desc-position="bottom"><img alt="Формы" src="../images/01-case-add-device2.png" title="Добавление устройства"></a></p>
+</li>
+<li>
+<p><strong>Создание группы устройств:</strong> сведения о группе → настройки доступа</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-add-device-group.png" data-desc-position="bottom"><img alt="Формы" src="../images/01-case-add-device-group.png" title="Создание группы устройств"></a></p>
+</li>
+<li>
+<p><strong>Создание пользователя:</strong> сведения → настройки доступа</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-add-user.png" data-desc-position="bottom"><img alt="Формы" src="../images/01-case-add-user.png" title="Создание пользователя"></a></p>
+<p>В каждой форме я предусмотрела вызов вложенных форм в виде модальных окон. Внешний вид модальных я привела к одному шаблону.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-add-device3.png" data-desc-position="bottom"><img alt="Формы" src="../images/01-case-add-device3.png" title="Вложенные формы"></a></p>
+</li>
+<li>
+<p><strong>Формы просмотра</strong>: сведения об объекте → назначенные устройства для пользователей (а для устройств - пользователи )</p>
+<p>Для устройств:</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-view-device.png" data-desc-position="bottom"><img alt="Формы" src="../images/01-case-view-device.png" title="Вкладка со сведениями объекта"></a></p>
+<p>Для пользователей:</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-view-user1.png" data-desc-position="bottom"><img alt="Формы" src="../images/01-case-view-user1.png" title="Вкладка со сведениями объекта"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/01-case-view-user2.png" data-desc-position="bottom"><img alt="Формы" src="../images/01-case-view-user2.png" title="Вкладка со сведениями объекта"></a></p>
+</li>
+</ol>
+<h2 id="_14">Сдача проекта<a class="headerlink" href="#_14" title="Permanent link">¶</a></h2>
+<p>К этому этапу я подготовила основные экраны приложения для разделов «Пользователи» и «Устройства», запрототипировала основные пользовательские сценарии.</p>
+<p>Я провела демонстрацию команде и получила обратную связь от ЛПР. Требовалось доработать error-состояния, интерфейсные тексты и пустые состояния.</p>
+<p>После доработки макеты ушли в разработку.</p>
+<p>Далее мне предстояла работа над оставшимися разделами: «Отчеты», «Администрирование» и «Мониторинг».</p>
+<h2 id="_15">Результат<a class="headerlink" href="#_15" title="Permanent link">¶</a></h2>
+<p>На начало 2022 года система успешно прошла все тесты и была внедрена на предприятии клиента. К системе были подключены терминалы доступа с поддержкой технологии распознавания лиц и обнаружением людей с повышенной температурой тела.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул">
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Назад: Обо мне">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Назад
+              </span>
+              <div class="md-ellipsis">
+                Обо мне
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../02-case/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Приложение по обзвону должников">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Вперед
+              </span>
+              <div class="md-ellipsis">
+                Приложение по обзвону должников
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="t.me/OlgaGazizova" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496m115 168.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7.2-.7.3-3.1-1.2-4.4s-3.6-.8-5.1-.5c-2.2.5-37.1 23.5-104.6 69.1-9.9 6.8-18.9 10.1-26.9 9.9-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3.6-4.5 6.7-9 18.4-13.7 72.3-31.5 120.5-52.3 144.6-62.3 68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6.5 9.6 2.9 2 1.7 3.2 4.1 3.5 6.7.5 3.2.6 6.5.4 9.8z"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
