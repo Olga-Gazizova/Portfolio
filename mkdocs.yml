@@ -146,6 +146,10 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - assets/js/yandex-metrika.js
+
+
 # Page tree
 nav:
   - Обо мне: index.md
