@@ -65,8 +65,6 @@ theme:
     # - toc.integrate
     # - navigation.path 
 
-
-
   font:
     text: Inter
   favicon: assets/favicon.png
