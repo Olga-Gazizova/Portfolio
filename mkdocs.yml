@@ -146,8 +146,8 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
-extra_javascript:
-  - assets/js/yandex-metrika.js
+#extra_javascript:
+#  - assets/js/yandex-metrika.js
 
 
 # Page tree
